@@ -2,13 +2,11 @@ import { ButtonHTMLAttributes } from 'react';
 
 import { Container } from './styles';
 
-type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
-  bgColor: string;
-};
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
 
-function Button({ children, bgColor, ...rest }: ButtonProps) {
+function Button({ children, ...rest }: ButtonProps) {
   return (
-    <Container type="button" {...rest} bgColor={bgColor}>
+    <Container type="button" {...rest}>
       {children}
     </Container>
   );

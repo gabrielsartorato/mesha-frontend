@@ -10,7 +10,7 @@ export const Container = styled.div`
   align-items: center;
 `;
 
-export const ContainerLogin = styled.div`
+export const ContainerRegister = styled.div`
   width: 396px;
   padding: 16px;
 
@@ -25,14 +25,22 @@ export const ContainerLogin = styled.div`
     color: rgba(0, 0, 0, 0.87);
   }
 
-  p {
-    margin-top: 16px;
-    font-size: 24px;
-    color: rgba(0, 0, 0, 0.87);
-  }
-
   div {
     margin-top: 16px;
+  }
+
+  select {
+    margin-top: 16px;
+    width: 100%;
+    height: 48px;
+    border: none;
+
+    background: #ffffff;
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    padding: 8px;
   }
 
   a {

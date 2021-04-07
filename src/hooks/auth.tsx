@@ -12,6 +12,7 @@ import api from '../services/api';
 interface User {
   id: string;
   name: string;
+  type: string;
 }
 
 interface AuthState {
