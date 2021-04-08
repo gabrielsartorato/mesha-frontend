@@ -1,10 +1,12 @@
 import { useCallback, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
+
 import Button from '../../components/Button';
+import Divider from '../../components/Divider';
 import Input from '../../components/Input';
 import api from '../../services/api';
 
-import { Container, ContainerRegister, Divider } from './styles';
+import { Container, ContainerRegister } from './styles';
 
 function Signup() {
   const history = useHistory();

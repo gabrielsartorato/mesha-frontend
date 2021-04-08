@@ -59,12 +59,3 @@ export const ContainerLogin = styled.div`
     background: ${shade(0.2, '#42b72a')};
   }
 `;
-
-export const Divider = styled.div`
-  width: 100%;
-  align-items: center;
-  border-bottom: 1px solid #dadde1;
-  display: flex;
-  margin: 20px 16px;
-  text-align: center;
-`;

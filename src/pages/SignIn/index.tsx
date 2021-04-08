@@ -1,9 +1,10 @@
 import { useCallback, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import Button from '../../components/Button';
+import Divider from '../../components/Divider';
 import Input from '../../components/Input';
 import { useAuth } from '../../hooks/auth';
-import { Container, ContainerLogin, Divider } from './styles';
+import { Container, ContainerLogin } from './styles';
 
 function SignIn() {
   const { signIn } = useAuth();
@@ -13,8 +14,13 @@ function SignIn() {
 
   const handleSubmit = useCallback(async () => {
     try {
+      if (!userLogin || !password) {
+        alert('Todos os campos devem ser preenchidos');
+        return;
+      }
+
       await signIn({ user_name: userLogin, password });
-      history.push('/Dashboard');
+      history.push('/dashboard');
     } catch (err) {
       alert('Usuário não encontrado');
       console.log(err);
