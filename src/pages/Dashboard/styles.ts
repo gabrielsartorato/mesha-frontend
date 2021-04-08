@@ -11,7 +11,7 @@ export const Container = styled.div`
   align-items: center;
 `;
 
-export const ContainerRegisterService = styled.div`
+export const ContainerInformation = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,6 +22,25 @@ export const ContainerRegisterService = styled.div`
   border-radius: 8px;
 
   padding: 16px;
+
+  div {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      width: 40px;
+      height: 40px;
+
+      border-radius: 4px;
+
+      background: #f06f6a;
+    }
+  }
 
   h1 {
     color: black;
@@ -96,6 +115,87 @@ export const ContainerServices = styled.div`
   strong {
     margin-top: 8px;
     color: black;
+    font-size: 24px;
+  }
+`;
+
+export const ContainerAttendance = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 1100px;
+
+  background: #cfe8fc;
+  border-radius: 8px;
+
+  padding: 16px;
+
+  div {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      width: 40px;
+      height: 40px;
+
+      border-radius: 4px;
+
+      background: #f06f6a;
+    }
+  }
+
+  h1 {
+    color: black;
+  }
+
+  p {
+    font-size: 32px;
+    color: black;
+  }
+`;
+
+export const ListAttendance = styled.section`
+  width: 100%;
+  margin-top: 16px;
+
+  div + div {
+    margin-top: 32px;
+  }
+
+  div {
+    padding: 2px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    background: white;
+    border-radius: 8px;
+
+    p + p {
+      margin-left: 32px;
+    }
+
+    p + button {
+      margin-left: 32px;
+    }
+
+    button {
+      width: 100%;
+      max-width: 20%;
+      border: none;
+      border-radius: 4px;
+
+      color: white;
+    }
+  }
+
+  div p {
     font-size: 24px;
   }
 `;
